@@ -23,6 +23,7 @@
     "test": "rimraf ./junit.xml && cross-env CI=true TEST_REPORT_FILENAME=./junit.xml react-scripts test --verbose --env=jsdom --testResultsProcessor ./node_modules/jest-junit-reporter"
   },
   "devDependencies": {
+    "arkit": "^1.6.4",
     "chai": "^4.1.2",
     "cross-env": "^5.2.0",
     "enzyme": "^3.2.0",
