@@ -20,7 +20,8 @@
     "prestart": "npm install",
     "start": "cross-env HOST=0.0.0.0 PORT=8000 react-scripts start",
     "pretest": "npm install",
-    "test": "rimraf ./junit.xml && cross-env CI=true TEST_REPORT_FILENAME=./junit.xml react-scripts test --verbose --env=jsdom --testResultsProcessor ./node_modules/jest-junit-reporter"
+    "test": "rimraf ./junit.xml && cross-env CI=true TEST_REPORT_FILENAME=./junit.xml react-scripts test --verbose --env=jsdom --testResultsProcessor ./node_modules/jest-junit-reporter",
+    "generate-flow-diagram": "npx arkit src/ -o arkit.svg"
   },
   "devDependencies": {
     "arkit": "^1.6.4",
